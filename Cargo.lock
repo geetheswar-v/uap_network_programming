@@ -6,16 +6,16 @@ version = 4
 name = "client"
 version = "0.1.0"
 dependencies = [
- "uap",
+ "helper",
 ]
+
+[[package]]
+name = "helper"
+version = "0.1.0"
 
 [[package]]
 name = "server"
 version = "0.1.0"
 dependencies = [
- "uap",
+ "helper",
 ]
-
-[[package]]
-name = "uap"
-version = "0.1.0"

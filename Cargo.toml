@@ -1,5 +1,5 @@
 [workspace]
-members = ["client", "server", "uap"]
+members = ["client", "server", "helper"]
 resolver = "3"
 
 # Optimize for release builds
