@@ -1,14 +1,12 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+//! Helper library for UAP protocol and Lamport logical clock.
+//! Provides:
+//! - UapHeader and UapMessage with binary encoding/decoding (big-endian)
+//! - LamportClock implementation
+//! - Common utilities for timing and IDs
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+pub mod uap;
+pub mod clock;
+pub mod util;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub use clock::LamportClock;
+pub use uap::{Command, UapHeader, UapMessage, HEADER_LEN, MAGIC, VERSION};
