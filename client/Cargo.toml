@@ -5,3 +5,4 @@ edition = "2024"
 
 [dependencies]
 helper = { path = "../helper" }
+ctrlc = "3.4"

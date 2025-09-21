@@ -5,3 +5,4 @@ edition = "2024"
 
 [dependencies]
 helper = { path = "../helper" }
+tokio = { version = "1.39", features = ["macros", "rt-multi-thread", "net", "io-util", "io-std", "time", "sync"] }
